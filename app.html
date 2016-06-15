@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta name="description" content="绕道儿拼车网致力于与广大网友一起打造一个诚信可靠、方便实用的拼车信息平台，方便我们出行的同时，让我们认识更多面对面的朋友。这里是中国最大的拼车社区。"/>
+    <meta name="keywords" content="拼车,拼车网,顺风车,搭车,拼车回家,搭顺风,合乘,拼车交友" />
+    <title>APP下载 - 绕道儿拼车网</title>
+    <link rel="stylesheet" href="http://pinche.raodaor.com/public/stylesheets/mobile.common.css?v=20150826">
+    <link rel="stylesheet" href="http://pinche.raodaor.com/public/stylesheets/download.app.css?v=20150826">
+</head>
+<body>
+    <div class="logo"><img src="http://pinche.raodaor.com/public/images/cyx_logo.png?v=1414051189228"></div>
+    <div class="download_botton_box">
+        <a href="###" class="downloadButton"><img src="http://pinche.raodaor.com/public/images/button_ios.png?v=1414051189228"></a>
+        <a href="###" onclick="isDownLoad()" class="downloadButton"><img src="http://pinche.raodaor.com/public/images/button_an.png?v=1414051189228"></a>
+    </div>
+    <div class="banner"><img src="http://pinche.raodaor.com/public/images/bottom_818.jpg"></div>
+    <div class="footer">
+        <p>&copy; 绕道儿拼车(PinChe.RaoDaoR.COM)</p>
+    </div>
+    <div class="dialog_cover" id="weixin_tip" style="display:none;"><img src="http://pinche.raodaor.com/public/images/tip.png" /></div>
+    <script>
+        function isWeiXin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function isDownLoad() {
+            if (isWeiXin()) {
+                document.getElementById("weixin_tip").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
